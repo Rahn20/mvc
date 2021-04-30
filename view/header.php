@@ -24,8 +24,8 @@ use function Rahn20\Functions\url;
         <a href="<?= url("/") ?>">Home</a> |
         <a href="<?= url("/session") ?>">Session</a> |
         <a href="<?= url("/debug") ?>">Debug</a> |
-        <a href="<?= url("/dice") ?>">Game 21</a>
-
+        <a href="<?= url("/dice") ?>">Game 21</a> |
+        <a href="<?= url("/yatzy") ?>">Yatzy</a>
         <!--
         <a href=" //url("/twig") ?>">Twig view</a> |
         <a href=" //url("/some/where") ?>">some/where</a> |

@@ -16,6 +16,7 @@ use function Rahn20\Functions\{
 /**
  * Class Router.
  */
+
 class Router
 {
     public static function dispatch(string $method, string $path): void
@@ -55,8 +56,8 @@ class Router
             ];
             $body = renderView("layout/page.php", $data);
             sendResponse($body);
-            return;*/
-        } else if ($method === "GET" && $path === "/dice") {
+            return;
+        */} else if ($method === "GET" && $path === "/dice") {
             $body = renderView("layout/dice.php");
             sendResponse($body);
             return;

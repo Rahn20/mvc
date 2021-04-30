@@ -54,5 +54,3 @@ if ($_SESSION['graphic']) {
 <p>Spelrunda: <?= $_SESSION['rounds']  ?> </p>
 <p>Totalt spelare poäng: <?= $_SESSION['playerPoints']  ?> </p>
 <p>Totalt dator poäng: <?= $_SESSION['computerPoints']  ?> </p>
-
-
