@@ -1,3 +1,3 @@
 # mvc
 
-Two games, Game21 and Yatzy
+2 games, Game21 and Yatzy
