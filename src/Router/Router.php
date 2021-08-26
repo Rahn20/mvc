@@ -1,5 +1,8 @@
 <?php
 
+/*
+koden finnsi Controller-mappen
+
 declare(strict_types=1);
 
 namespace Rahn20\Router;
@@ -13,9 +16,6 @@ use function Rahn20\Functions\{
     url
 };
 
-/**
- * Class Router.
- */
 class Router
 {
     public static function dispatch(string $method, string $path): void
@@ -40,22 +40,7 @@ class Router
             $body = renderView("layout/debug.php");
             sendResponse($body);
             return;
-        /*} else if ($method === "GET" && $path === "/twig") {
-            $data = [
-                "header" => "Twig page",
-                "message" => "Hey, edit this to do it youreself!",
-            ];
-            $body = renderTwigView("index.html", $data);
-            sendResponse($body);
-            return;
-        } else if ($method === "GET" && $path === "/some/where") {
-            $data = [
-                "header" => "Rainbow page",
-                "message" => "Hey, edit this to do it youreself!",
-            ];
-            $body = renderView("layout/page.php", $data);
-            sendResponse($body);
-            return;*/
+
         } else if ($method === "GET" && $path === "/dice") {
             $body = renderView("layout/dice.php");
             sendResponse($body);
@@ -77,4 +62,4 @@ class Router
         $body = renderView("layout/page.php", $data);
         sendResponse($body, 404);
     }
-}
+}*/

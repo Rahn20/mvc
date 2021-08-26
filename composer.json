@@ -1,4 +1,14 @@
 {
+    "name": "dbwebb/mvc-game",
+    "description": "A part of the course dbwebb/mvc, the game.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ranim Hanna Malko",
+            "email": "ranimhanna@hotmail.com",
+            "role": "Student"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Mos\\": "src/",
@@ -13,6 +23,9 @@
         "phpstan/phpstan": "^0.12"
     },
     "require": {
-        "twig/twig": "^3.3"
+        "twig/twig": "^3.3",
+        "nikic/fast-route": "^1.3",
+        "nyholm/psr7": "^1.4",
+        "laminas/laminas-httphandlerrunner": "^1.4"
     }
 }

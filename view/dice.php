@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-use function Rahn20\Functions\url; 
+use function Rahn20\Functions\url;
 
 $_SESSION['hand'] = $_SESSION['hand'] ?? null;
 $_SESSION['player'] = $_SESSION['player'] ?? null;
@@ -45,7 +45,7 @@ if ($_SESSION['graphic']) {
     }
 }?> </p>
 
-<p><?= $_SESSION['hand'] ?> </p>
+<p>Senaste slaget: <?= $_SESSION['hand'] ?> </p>
 <p>Spelarens poäng: <?= $_SESSION['player']  ?> </p>
 <p>Datorns poäng: <?= $_SESSION['computer']  ?> </p>
 
@@ -54,5 +54,3 @@ if ($_SESSION['graphic']) {
 <p>Spelrunda: <?= $_SESSION['rounds']  ?> </p>
 <p>Totalt spelare poäng: <?= $_SESSION['playerPoints']  ?> </p>
 <p>Totalt dator poäng: <?= $_SESSION['computerPoints']  ?> </p>
-
-

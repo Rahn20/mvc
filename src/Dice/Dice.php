@@ -9,18 +9,18 @@ namespace Rahn20\Dice;
  */
 class Dice
 {
-    const FACES = 6;
+    //const FACES = 6;
     private ?int $roll = null;
 
     public function roll(): int
     {
-        $this->roll = rand(1, self::FACES);
+        $this->roll = rand(1, 6);
+        //$this->roll = rand(1, self::FACES);
         return $this->roll;
     }
 
-    public function getLastRoll(): int 
+    public function getLastRoll(): int
     {
         return $this->roll;
-    }  
+    }
 }
-

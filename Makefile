@@ -12,13 +12,16 @@ all:
 	@echo "Review the file 'Makefile' to see what targets are supported."
 
 clean:
-	@# Yet nothing to do in this target
+	rm -rf build .phpunit.result.cache
+
+clean-all: clean
+	rm -rf vendor composer.lock
 
 clean-cache:
 	rm -rf cache/*/*
 
-clean-all:
-	rm -rf .bin build vendor
+#clean-all:
+#	rm -rf .bin build vendor
 
 install: install-php-tools
 	composer install
@@ -84,12 +87,13 @@ phpstan: prepare
 	- [ ! -f .phpstan.neon ] || $(PHPSTAN) analyse -c .phpstan.neon | tee build/phpstan
 
 phpunit: prepare
-	[ ! -d "test" ] || $(PHPUNIT) --configuration .phpunit.xml $(options)
+	[ ! -d "test" ] || XDEBUG_MODE=coverage $(PHPUNIT) --configuration .phpunit.xml $(options) | tee build/phpunit
 
 cs: phpcs
 
 lint: cs phpcpd phpmd phpstan
 
 test: lint phpunit
+	composer validate
 
 metric: phploc
