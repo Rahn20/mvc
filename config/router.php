@@ -10,6 +10,7 @@ declare(strict_types=1);
 
 use FastRoute\RouteCollector;
 
+<<<<<<< HEAD
 $router = $router ?? new RouteCollector(
     new \FastRoute\RouteParser\Std(),
     new \FastRoute\DataGenerator\MarkBased()
@@ -19,6 +20,12 @@ $router = $router ?? new RouteCollector(
     // A quick and dirty way to test the router or the request.
     //return "Testing response";
 //});
+=======
+$router->addRoute("GET", "/test", function () {
+    // A quick and dirty way to test the router or the request.
+    return "Testing response";
+});
+>>>>>>> refs/remotes/origin/main
 
 $router->addRoute("GET", "/", "\Rahn20\Controller\Index");
 $router->addRoute("GET", "/debug", "\Rahn20\Controller\Debug");

@@ -1,7 +1,11 @@
 <h3>Yatzy-protokoll</h3>
 <table>
   <tr>
+<<<<<<< HEAD
     <th></th>
+=======
+    <th>Deltagare</th>
+>>>>>>> refs/remotes/origin/main
     <th>Spelare</th> 
   </tr>
   <tr>
