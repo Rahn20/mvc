@@ -77,6 +77,7 @@ class FunctionsTest extends TestCase
             "key" => "value"
         ];
 
+        $this->assertEquals($_SESSION, ["key" => "value"]);
         destroySession();
         $this->assertEmpty($_SESSION);
     }

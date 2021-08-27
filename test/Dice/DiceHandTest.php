@@ -53,9 +53,54 @@ class DiceHandTest extends TestCase
     }
 
     /**
-     * test yatzyvalues, doing 3 tests
+     * test yatzyvalues, doing 5 tests
      * properties, use one argument.
      */
+    public function testSumAllYatzyValues(): void
+    {
+        $diceHandTest1 = new DiceHand(8);
+        $diceHandTest2 = new DiceHand(7);
+        $diceHandTest3 = new DiceHand(6);
+        $diceHandTest4 = new DiceHand(5);
+        $diceHandTest5 = new DiceHand(4);
+
+        $diceHandTest1->rollDices();
+        $diceHandTest2->rollDices();
+        $diceHandTest3->rollDices();
+        $diceHandTest4->rollDices();
+        $diceHandTest5->rollDices();
+
+        $diceHandTest1->getAllValues();
+        $diceHandTest2->getAllValues();
+        $diceHandTest3->getAllValues();
+        $diceHandTest4->getAllValues();
+        $diceHandTest5->getAllValues();
+
+        $res1 = array_sum($diceHandTest1->yatzyvalues());
+        $exp1 = array_sum($diceHandTest1->values());
+        $this->assertEquals($exp1, $res1);
+
+        $res2 = $res1 + array_sum($diceHandTest2->yatzyvalues());
+        $exp2 = $res1 + array_sum($diceHandTest2->values());
+        $this->assertEquals($exp2, $res2);
+
+        $res3 = $res2 + array_sum($diceHandTest3->yatzyvalues());
+        $exp3 = $res2 + array_sum($diceHandTest3->values());
+        $this->assertEquals($exp3, $res3);
+
+        $res4 = $res3 + array_sum($diceHandTest4->yatzyvalues());
+        $exp4 = $res3 + array_sum($diceHandTest4->values());
+        $this->assertEquals($exp4, $res4);
+
+        $res5 = $res4 + array_sum($diceHandTest5->yatzyvalues());
+        $exp5 = $res4 + array_sum($diceHandTest5->values());
+        $this->assertEquals($exp5, $res5);
+    }
+
+    /**
+     * test result-function, doing 3 tests
+     * properties, use one argument.
+    */
     public function testGetAllYatzyValues(): void
     {
         $diceHandTest1 = new DiceHand(8);

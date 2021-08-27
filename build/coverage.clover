@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629990453">
-  <project timestamp="1629990453">
+<coverage generated="1630073127">
+  <project timestamp="1630073127">
     <file name="C:\Users\Ranim\dbwebb-kurser\mvc\me\game\config\bootstrap.php">
       <line num="12" type="stmt" count="1"/>
       <line num="13" type="stmt" count="1"/>
@@ -163,64 +163,65 @@
       <class name="Rahn20\Dice\Dice" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
       </class>
-      <line num="15" type="method" name="roll" visibility="public" complexity="1" crap="1" count="5"/>
-      <line num="17" type="stmt" count="5"/>
-      <line num="19" type="stmt" count="5"/>
+      <line num="15" type="method" name="roll" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="17" type="stmt" count="6"/>
+      <line num="19" type="stmt" count="6"/>
       <line num="22" type="method" name="getLastRoll" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="24" type="stmt" count="1"/>
       <metrics loc="26" ncloc="21" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
     </file>
     <file name="C:\Users\Ranim\dbwebb-kurser\mvc\me\game\src\Dice\DiceHand.php">
       <class name="Rahn20\Dice\DiceHand" namespace="global">
-        <metrics complexity="24" methods="8" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="53" elements="62" coveredelements="60"/>
+        <metrics complexity="24" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="54" elements="62" coveredelements="62"/>
       </class>
-      <line num="17" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="4"/>
-      <line num="19" type="stmt" count="4"/>
-      <line num="20" type="stmt" count="4"/>
-      <line num="21" type="stmt" count="4"/>
-      <line num="23" type="stmt" count="4"/>
-      <line num="29" type="method" name="rollDices" visibility="public" complexity="2" crap="2" count="4"/>
-      <line num="31" type="stmt" count="4"/>
-      <line num="32" type="stmt" count="4"/>
-      <line num="34" type="stmt" count="4"/>
-      <line num="35" type="stmt" count="4"/>
-      <line num="36" type="stmt" count="4"/>
-      <line num="37" type="stmt" count="4"/>
-      <line num="39" type="stmt" count="4"/>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="5"/>
+      <line num="19" type="stmt" count="5"/>
+      <line num="20" type="stmt" count="5"/>
+      <line num="21" type="stmt" count="5"/>
+      <line num="23" type="stmt" count="5"/>
+      <line num="29" type="method" name="rollDices" visibility="public" complexity="2" crap="2" count="5"/>
+      <line num="31" type="stmt" count="5"/>
+      <line num="32" type="stmt" count="5"/>
+      <line num="34" type="stmt" count="5"/>
+      <line num="35" type="stmt" count="5"/>
+      <line num="36" type="stmt" count="5"/>
+      <line num="37" type="stmt" count="5"/>
+      <line num="39" type="stmt" count="5"/>
       <line num="45" type="method" name="getLastRoll" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="47" type="stmt" count="1"/>
       <line num="48" type="stmt" count="1"/>
       <line num="54" type="method" name="theSum" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="56" type="stmt" count="1"/>
-      <line num="63" type="method" name="values" visibility="public" complexity="1" crap="1" count="4"/>
-      <line num="65" type="stmt" count="4"/>
-      <line num="71" type="method" name="getAllValues" visibility="public" complexity="8" crap="8" count="1"/>
-      <line num="74" type="stmt" count="1"/>
-      <line num="75" type="stmt" count="1"/>
-      <line num="76" type="stmt" count="1"/>
-      <line num="77" type="stmt" count="1"/>
-      <line num="78" type="stmt" count="1"/>
-      <line num="79" type="stmt" count="1"/>
-      <line num="80" type="stmt" count="1"/>
-      <line num="82" type="stmt" count="1"/>
-      <line num="83" type="stmt" count="1"/>
-      <line num="84" type="stmt" count="1"/>
-      <line num="85" type="stmt" count="1"/>
-      <line num="86" type="stmt" count="1"/>
-      <line num="87" type="stmt" count="1"/>
-      <line num="88" type="stmt" count="0"/>
-      <line num="89" type="stmt" count="1"/>
-      <line num="90" type="stmt" count="1"/>
-      <line num="91" type="stmt" count="1"/>
-      <line num="92" type="stmt" count="1"/>
-      <line num="93" type="stmt" count="1"/>
-      <line num="94" type="stmt" count="1"/>
-      <line num="97" type="stmt" count="1"/>
-      <line num="103" type="method" name="yatzyvalues" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="105" type="stmt" count="1"/>
-      <line num="114" type="method" name="result" visibility="public" complexity="8" crap="8" count="1"/>
+      <line num="63" type="method" name="values" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="65" type="stmt" count="5"/>
+      <line num="71" type="method" name="getAllValues" visibility="public" complexity="8" crap="8" count="2"/>
+      <line num="73" type="stmt" count="2"/>
+      <line num="74" type="stmt" count="2"/>
+      <line num="75" type="stmt" count="2"/>
+      <line num="76" type="stmt" count="2"/>
+      <line num="77" type="stmt" count="2"/>
+      <line num="78" type="stmt" count="2"/>
+      <line num="79" type="stmt" count="2"/>
+      <line num="81" type="stmt" count="2"/>
+      <line num="82" type="stmt" count="2"/>
+      <line num="83" type="stmt" count="2"/>
+      <line num="84" type="stmt" count="2"/>
+      <line num="85" type="stmt" count="2"/>
+      <line num="86" type="stmt" count="2"/>
+      <line num="87" type="stmt" count="2"/>
+      <line num="88" type="stmt" count="2"/>
+      <line num="89" type="stmt" count="2"/>
+      <line num="90" type="stmt" count="2"/>
+      <line num="91" type="stmt" count="2"/>
+      <line num="92" type="stmt" count="2"/>
+      <line num="93" type="stmt" count="2"/>
+      <line num="96" type="stmt" count="2"/>
+      <line num="102" type="method" name="yatzyvalues" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="104" type="stmt" count="2"/>
+      <line num="113" type="method" name="result" visibility="public" complexity="8" crap="8" count="1"/>
+      <line num="115" type="stmt" count="1"/>
       <line num="116" type="stmt" count="1"/>
-      <line num="117" type="stmt" count="1"/>
+      <line num="118" type="stmt" count="1"/>
       <line num="119" type="stmt" count="1"/>
       <line num="120" type="stmt" count="1"/>
       <line num="121" type="stmt" count="1"/>
@@ -233,10 +234,9 @@
       <line num="128" type="stmt" count="1"/>
       <line num="129" type="stmt" count="1"/>
       <line num="130" type="stmt" count="1"/>
-      <line num="131" type="stmt" count="1"/>
-      <line num="133" type="stmt" count="1"/>
-      <line num="135" type="stmt" count="1"/>
-      <metrics loc="137" ncloc="107" classes="1" methods="8" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="53" elements="62" coveredelements="60"/>
+      <line num="132" type="stmt" count="1"/>
+      <line num="134" type="stmt" count="1"/>
+      <metrics loc="136" ncloc="106" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="54" elements="62" coveredelements="62"/>
     </file>
     <file name="C:\Users\Ranim\dbwebb-kurser\mvc\me\game\src\Dice\GraphicalDice.php">
       <class name="Rahn20\Dice\GraphicalDice" namespace="global">
@@ -312,6 +312,6 @@
       <line num="213" type="stmt" count="4"/>
       <metrics loc="213" ncloc="146" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="60" coveredstatements="56" elements="60" coveredelements="56"/>
     </file>
-    <metrics files="15" loc="867" ncloc="643" classes="11" methods="25" coveredmethods="24" conditionals="0" coveredconditionals="0" statements="208" coveredstatements="201" elements="233" coveredelements="225"/>
+    <metrics files="15" loc="866" ncloc="642" classes="11" methods="25" coveredmethods="25" conditionals="0" coveredconditionals="0" statements="208" coveredstatements="202" elements="233" coveredelements="227"/>
   </project>
 </coverage>

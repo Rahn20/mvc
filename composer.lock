@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "adb2d8970700843cc555f5a68ff668b3",
-=======
-    "content-hash": "26560cfce31f5b7b4e3f71417a4a521f",
->>>>>>> refs/remotes/origin/main
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -83,7 +79,6 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-<<<<<<< HEAD
             "version": "1.3.0",
             "source": {
                 "type": "git",
@@ -94,18 +89,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/13af2502d9bb6f7d33be2de4b51fb68c6cdb476e",
                 "reference": "13af2502d9bb6f7d33be2de4b51fb68c6cdb476e",
-=======
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6cccbddfcfc742eb02158d6137ca5687d92cee32",
-                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32",
->>>>>>> refs/remotes/origin/main
                 "shasum": ""
             },
             "require": {
@@ -154,11 +137,7 @@
                     "type": "community_bridge"
                 }
             ],
-<<<<<<< HEAD
             "time": "2021-06-24T12:49:22+00:00"
-=======
-            "time": "2021-02-25T21:54:58+00:00"
->>>>>>> refs/remotes/origin/main
         },
         {
             "name": "nikic/fast-route",
@@ -212,7 +191,6 @@
         },
         {
             "name": "nyholm/psr7",
-<<<<<<< HEAD
             "version": "1.4.1",
             "source": {
                 "type": "git",
@@ -223,18 +201,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Nyholm/psr7/zipball/2212385b47153ea71b1c1b1374f8cb5e4f7892ec",
                 "reference": "2212385b47153ea71b1c1b1374f8cb5e4f7892ec",
-=======
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Nyholm/psr7.git",
-                "reference": "23ae1f00fbc6a886cbe3062ca682391b9cc7c37b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/23ae1f00fbc6a886cbe3062ca682391b9cc7c37b",
-                "reference": "23ae1f00fbc6a886cbe3062ca682391b9cc7c37b",
->>>>>>> refs/remotes/origin/main
                 "shasum": ""
             },
             "require": {
@@ -248,11 +214,7 @@
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-<<<<<<< HEAD
                 "http-interop/http-factory-tests": "^0.9",
-=======
-                "http-interop/http-factory-tests": "^0.8",
->>>>>>> refs/remotes/origin/main
                 "php-http/psr7-integration-tests": "^1.0",
                 "phpunit/phpunit": "^7.5 || 8.5 || 9.4",
                 "symfony/error-handler": "^4.4"
@@ -290,11 +252,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Nyholm/psr7/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/Nyholm/psr7/tree/1.4.1"
-=======
-                "source": "https://github.com/Nyholm/psr7/tree/1.4.0"
->>>>>>> refs/remotes/origin/main
             },
             "funding": [
                 {
@@ -306,11 +264,7 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
             "time": "2021-07-02T08:32:20+00:00"
-=======
-            "time": "2021-02-18T15:41:32+00:00"
->>>>>>> refs/remotes/origin/main
         },
         {
             "name": "php-http/message-factory",

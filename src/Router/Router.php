@@ -16,13 +16,6 @@ use function Rahn20\Functions\{
     url
 };
 
-<<<<<<< HEAD
-=======
-/**
- * Class Router.
- */
-
->>>>>>> refs/remotes/origin/main
 class Router
 {
     public static function dispatch(string $method, string $path): void
@@ -47,28 +40,8 @@ class Router
             $body = renderView("layout/debug.php");
             sendResponse($body);
             return;
-<<<<<<< HEAD
 
         } else if ($method === "GET" && $path === "/dice") {
-=======
-        /*} else if ($method === "GET" && $path === "/twig") {
-            $data = [
-                "header" => "Twig page",
-                "message" => "Hey, edit this to do it youreself!",
-            ];
-            $body = renderTwigView("index.html", $data);
-            sendResponse($body);
-            return;
-        } else if ($method === "GET" && $path === "/some/where") {
-            $data = [
-                "header" => "Rainbow page",
-                "message" => "Hey, edit this to do it youreself!",
-            ];
-            $body = renderView("layout/page.php", $data);
-            sendResponse($body);
-            return;
-        */} else if ($method === "GET" && $path === "/dice") {
->>>>>>> refs/remotes/origin/main
             $body = renderView("layout/dice.php");
             sendResponse($body);
             return;
