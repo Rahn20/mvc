@@ -1,3 +1,0 @@
-C:\Users\Ranim\dbwebb-kurser\mvc\me\game\view\yatzy_play.php:33	The method roll uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-C:\Users\Ranim\dbwebb-kurser\mvc\me\game\view\yatzy_play.php:74	The method save uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-C:\Users\Ranim\dbwebb-kurser\mvc\me\game\view\yatzy_play.php:77	The method save uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.

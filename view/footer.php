@@ -1,8 +1,8 @@
 </main>
-<footer>
+        <footer>
 
-    <p> &copy; By Ranim 2021</p>
+            <p> &copy; By Ranim 2021</p>
 
-</footer>
-</body>
+        </footer>
+    </body>
 </html>

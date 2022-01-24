@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Standard view template to generate a simple web page, or part of a web page.
+ * Standard view template to generate a web page, or part of a web page.
 */
 
 declare(strict_types=1);
@@ -27,19 +27,22 @@ $_SESSION['computerPoints'] = $_SESSION['computerPoints'] ?? null;
         <option name="1" value="1"> ett
         <option name="2" value="2"> två
     <select>
+    
     <p>
         <input type="submit" name="submit" value="Kasta">
         <input type="submit" name="submit" value="Stanna">
-        <input type="submit" name="submit" value="Ny runda">     
+        <input type="submit" name="submit" value="Ny runda">
     </p>
+
     <p><a href="<?= url("/dice/destroy")?>"> Nollställ poäng </a> </p>
-</form> 
+
+</form>
 
 
 <p class="dice-utf8"><?php
 if ($_SESSION['graphic']) {
     $i = 0;
-    while ($i <= strlen($_SESSION['graphic'])) {?> 
+    while ($i <= strlen($_SESSION['graphic'])) {?>
         <i class="<?= substr($_SESSION['graphic'], $i, 6) ?> "></i><?php
         $i += 6;
     }

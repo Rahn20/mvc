@@ -17,20 +17,24 @@ $res = $_POST["values"] ?? null;
 
 $_SESSION['number'] = $_SESSION["number"] ?? 0;
 $_SESSION['counter'] = $_SESSION["counter"] ?? 0;
+
 $values = $_SESSION['yatzyValues'] ?? null;
 $getValuesResult = $_SESSION['getValuesResult'] ?? null;
+
 $saveDice = $_SESSION["saveDice"] ?? null;
 $keepDice = $_SESSION["keepDice"] ?? null;
+
 $_SESSION["finale"] = $_SESSION["finale"] ?? null;
 $_SESSION["bonus"] = $_SESSION["bonus"] ?? null;
+
 
 function roll($values, $keepDice)
 {
     $_SESSION['number'] += 1;
 
-    if ($values == null) {
-        $diceHand = new DiceHand(5);
-    } else {
+    $diceHand = new DiceHand(5);
+
+    if ($values != null) {
         $diceHand = new DiceHand(count($values));
     }
 
@@ -59,23 +63,23 @@ function keep($values, $keepDice, $options)
 function save($res, $saveDice)
 {
     $count = explode(":", $res);
+
     if ($saveDice[$count[0] - 1] == null) {
         $_SESSION['counter'] += 1;
         $saveDice[$count[0] - 1] = $count[1];
         $_SESSION['saveDice'] = $saveDice;
     }
 
+    $_SESSION['number'] = 0;
+
     if ($_SESSION['counter'] == 6) {
         $_SESSION["finale"] = array_sum($saveDice);
         $_SESSION['number'] = 4;
+        $_SESSION["bonus"] = 0;
 
         if ($_SESSION["finale"] >= 63) {
             $_SESSION["bonus"] = 50;
-        } else {
-            $_SESSION["bonus"] = 0;
         }
-    } else {
-        $_SESSION['number'] = 0;
     }
 
     $_SESSION['keepDice'] = null;

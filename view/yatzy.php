@@ -18,13 +18,15 @@ $_SESSION['saveDice'][3] = $_SESSION['saveDice'][3] ?? null;
 $_SESSION['saveDice'][4] = $_SESSION['saveDice'][4] ?? null;
 $_SESSION['saveDice'][5] = $_SESSION['saveDice'][5] ?? null;
 
-use function Rahn20\Functions\url;
-?>
+use function Rahn20\Functions\url; ?>
+
 
 <h1>Yatzy</h1>
-<p>Du kan välja spara/behålla dina tärningar, sparar du värdet på tärningar får du börja med 3 slag igen. Du har 3 slag och 5 tärningar. 
+
+<p>Du kan välja spara/behålla dina tärningar, sparar du värdet på tärningar får du börja med 3 slag igen. Du har 3 slag och 5 tärningar.
     Du kan behålla tärningar och försätta kasta, du har rätt till högst 3 tärningskast, du kan spara de behållande tärningarna efter tredje slaget eller innan, du väljer.
 </p>
+
 <form method="post" action="<?= url("/yatzy/play") ?>">
     <p><input type="submit" name="submit" value="Kasta"></p>
     <p><a href="<?= url("/yatzy/destroy")?>"> Nollställ poäng </a> </p>

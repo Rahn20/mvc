@@ -15,6 +15,7 @@ use function Rahn20\Functions\{
 
 $submit = $_POST["submit"] ?? null;
 $options = $_POST["select"] ?? null;
+
 $player = $_SESSION['player'] ?? null;
 $computer = $_SESSION['computer'] ?? null;
 $rounds = $_SESSION['rounds'] ?? null;
