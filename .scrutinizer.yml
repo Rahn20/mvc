@@ -12,10 +12,16 @@ build:
                 php:
                     version: 7.4
 
-    tests:
-        override:
-            -
-                command: "make phpunit"
-                coverage:
-                    file: "build/coverage.clover"
-                    format: "php-clover"
+        analysis:
+            tests:
+                override:
+                    - php-scrutinizer-run
+
+        tests-and-coverage:
+            tests:
+                override:
+                    -
+                        command: "make phpunit"
+                        coverage:
+                            file: "build/coverage.clover"
+                            format: "php-clover"
