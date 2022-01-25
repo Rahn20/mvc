@@ -15,10 +15,11 @@ $router = $router ?? new RouteCollector(
     new \FastRoute\DataGenerator\MarkBased()
 );
 
-//$router->addRoute("GET", "/test", function () {
-    // A quick and dirty way to test the router or the request.
-    //return "Testing response";
-//});
+/*
+$router->addRoute("GET", "/test", function () {
+    //A quick and dirty way to test the router or the request.
+    return "Testing response";
+});*/
 
 $router->addRoute("GET", "/", "\Rahn20\Controller\Index");
 $router->addRoute("GET", "/debug", "\Rahn20\Controller\Debug");
